@@ -1,0 +1,466 @@
+var dataAll = [
+    [
+        [
+            [5, 49.8550],
+            [10, 86.3000],
+            [15, 97.7000],
+            [20, 98.3200],
+            [25, 98.6700],
+            [30, 98.6900],
+            [35, 98.5800],
+            [40, 98.6800],
+            [45, 98.7400],
+            [50, 98.8800],
+        ],
+        [
+            [5, 21.8650],
+            [10, 52.8100],
+            [15, 68.8900],
+            [20, 80.4500],
+            [25, 87.6800],
+            [30, 91.3000],
+            [35, 93.9100],
+            [40, 95.4450],
+            [45, 94.0300],
+            [50, 96.7100],
+        ],
+        [
+            [5, 41.7500],
+            [10, 58.7100],
+            [15, 79.0700],
+            [20, 87.6600],
+            [25, 92.0900],
+            [30, 94.5000],
+            [35, 96.0400],
+            [40, 97.0500],
+            [45, 95.8650],
+            [50, 98.3700],
+        ],
+        [
+            [5, 21.4500],
+            [10, 50.9250],
+            [15, 73.0700],
+            [20, 84.4850],
+            [25, 90.6300],
+            [30, 94.7900],
+            [35, 96.3500],
+            [40, 97.9700],
+            [45, 96.1900],
+            [50, 98.8850],
+        ],
+    ],
+    [
+        [
+            [5, 63.5300],
+            [10, 88.6700],
+            [15, 94.9800],
+            [20, 94.3700],
+            [25, 94.4100],
+            [30, 94.7200],
+            [35, 94.6200],
+            [40, 93.8600],
+            [45, 93.7600],
+            [50, 94.1900],
+        ],
+        [
+            [5, 57.2900],
+            [10, 70.9700],
+            [15, 76.5300],
+            [20, 77.5600],
+            [25, 78.6500],
+            [30, 76.6900],
+            [35, 77.4900],
+            [40, 78.4500],
+            [45, 78.0100],
+            [50, 79.7800],
+        ],
+        [
+            [5, 63.4700],
+            [10, 61.4000],
+            [15, 78.8200],
+            [20, 80.7400],
+            [25, 80.1700],
+            [30, 81.3700],
+            [35, 80.1700],
+            [40, 80.9900],
+            [45, 80.8200],
+            [50, 81.6500],
+        ],
+        [
+            [5, 68.9900],
+            [10, 73.6300],
+            [15, 78.5800],
+            [20, 79.8400],
+            [25, 80.6200],
+            [30, 80.5200],
+            [35, 80.6500],
+            [40, 81.7400],
+            [45, 82.5400],
+            [50, 81.7300],
+        ],
+    ],
+    [
+        [
+            [5, 76.0950],
+            [10, 93.3600],
+            [15, 98.3000],
+            [20, 98.3300],
+            [25, 98.4200],
+            [30, 98.5850],
+            [35, 98.4100],
+            [40, 98.4500],
+            [45, 98.7100],
+            [50, 98.8000],
+        ],
+        [
+            [5, 65.4750],
+            [10, 86.5500],
+            [15, 91.2300],
+            [20, 93.8450],
+            [25, 95.5600],
+            [30, 96.1100],
+            [35, 96.7950],
+            [40, 97.0300],
+            [45, 96.4100],
+            [50, 97.1100],
+        ],
+        [
+            [5, 77.5550],
+            [10, 57.2800],
+            [15, 92.5400],
+            [20, 96.5200],
+            [25, 97.7800],
+            [30, 98.4900],
+            [35, 98.3000],
+            [40, 98.8400],
+            [45, 98.3250],
+            [50, 98.9100],
+        ],
+        [
+            [5, 86.3350],
+            [10, 82.5050],
+            [15, 93.3650],
+            [20, 96.1050],
+            [25, 97.3200],
+            [30, 98.1300],
+            [35, 98.2700],
+            [40, 98.7300],
+            [45, 98.3100],
+            [50, 98.9200],
+        ],
+    ],
+    [
+        [
+            [5, 76.1200],
+            [10, 93.2750],
+            [15, 98.2950],
+            [20, 98.3100],
+            [25, 98.4100],
+            [30, 98.5650],
+            [35, 98.4500],
+            [40, 98.4700],
+            [45, 98.7150],
+            [50, 98.8000],
+        ],
+        [
+            [5, 65.3750],
+            [10, 86.5800],
+            [15, 91.7550],
+            [20, 93.6950],
+            [25, 95.4500],
+            [30, 95.9000],
+            [35, 96.7400],
+            [40, 97.0200],
+            [45, 96.6100],
+            [50, 96.9800],
+        ],
+        [
+            [5, 77.6600],
+            [10, 57.1950],
+            [15, 92.5350],
+            [20, 96.4400],
+            [25, 97.8100],
+            [30, 98.5950],
+            [35, 98.3100],
+            [40, 98.8050],
+            [45, 98.3450],
+            [50, 98.9300],
+        ],
+        [
+            [5, 86.2500],
+            [10, 82.3300],
+            [15, 93.1250],
+            [20, 96.0700],
+            [25, 97.0650],
+            [30, 98.0500],
+            [35, 98.2400],
+            [40, 98.6700],
+            [45, 98.2700],
+            [50, 98.8850],
+        ],
+    ],
+
+];
+
+var markLineOpt = {
+    animation: false,
+    label: {
+        /*normal: {
+            formatter: 'y = 0.5 * x + 3',
+            textStyle: {
+                align: 'right'
+            }
+        }*/
+    },
+    lineStyle: {
+        normal: {
+            type: 'solid'
+        }
+    },
+    /*tooltip: {
+        formatter: 'y = 0.5 * x + 3'
+    },*/
+    data: [[{
+        coord: [0, 3],
+        symbol: 'none'
+    }, {
+        coord: [20, 13],
+        symbol: 'none'
+    }]]
+};
+
+option = {
+    backgroundColor: 'white',
+    toolbox: {
+        // y: 'bottom',
+        feature: {
+            magicType: {
+                type: ['stack', 'tiled']
+            },
+            dataView: {},
+            saveAsImage: {
+                pixelRatio: 2
+            }
+        }
+    },
+    title: [
+        {
+            text: 'Euclidean Distance',
+            textStyle: {
+                color: '#333',
+                fontStyle: 'normal',
+                fontWeight: 'bolder',
+                fontFamily: 'Times New Roman',
+                fontSize: 14,
+            },
+            left: '25%',
+            bottom: '284',
+            textAlign: 'center'
+        },
+        {
+            text: 'Canberra Distance',
+            textStyle: {
+                color: '#333',
+                fontStyle: 'normal',
+                fontWeight: 'bolder',
+                fontFamily: 'Times New Roman',
+                fontSize: 14,
+            },
+            left: '73%',
+            bottom: '284',
+            textAlign: 'center'
+        },
+        {
+            text: 'Cosine',
+            textStyle: {
+                color: '#333',
+                fontStyle: 'normal',
+                fontWeight: 'bolder',
+                fontFamily: 'Times New Roman',
+                fontSize: 14,
+            },
+            left: '25%',
+            bottom: '-3',
+            textAlign: 'center'
+        },
+        {
+            text: 'Correlation Coefficient',
+            textStyle: {
+                color: '#333',
+                fontStyle: 'normal',
+                fontWeight: 'bolder',
+                fontFamily: 'Times New Roman',
+                fontSize: 14,
+            },
+            left: '73%',
+            bottom: '-3',
+            textAlign:'center'
+        }
+    ],
+    grid: [
+        {x: '7%', y: '7%', width: '38%', height: '38%'},
+        {x2: '7%', y: '7%', width: '38%', height: '38%'},
+        {x: '7%', y2: '7%', width: '38%', height: '38%'},
+        {x2: '7%', y2: '7%', width: '38%', height: '38%'}
+    ],
+    tooltip: {
+        formatter: 'Group {a}: ({c})'
+    },
+    xAxis: [
+        {gridIndex: 0, min: 5, max: 50},
+        {gridIndex: 1, min: 5, max: 50},
+        {gridIndex: 2, min: 5, max: 50},
+        {gridIndex: 3, min: 5, max: 50}
+    ],
+    yAxis: [
+        {gridIndex: 0, min: 20, max: 100,
+        name: 'AUC值（百分比）', nameLocation: 'middle', nameGap: '30'},
+        {gridIndex: 1, min: 20, max: 100,
+        name: 'AUC值（百分比）', nameLocation: 'middle', nameGap: '30'},
+        {gridIndex: 2, min: 20, max: 100,
+        name: 'AUC值（百分比）', nameLocation: 'middle', nameGap: '30'},
+        {gridIndex: 3, min: 20, max: 100,
+        name: 'AUC值（百分比）', nameLocation: 'middle', nameGap: '30'}
+    ],
+    legend: {
+        top: '10',
+        data:['facebook', 'email', 'astroph', 'brightkite']
+    },
+    series: [
+        // 欧氏距离
+        {
+            name: 'facebook',
+            type: 'line',
+            xAxisIndex: 0,
+            yAxisIndex: 0,
+            data: dataAll[0][0],
+            markLine: markLineOpt
+        },
+        {
+            name: 'email',
+            type: 'line',
+            xAxisIndex: 0,
+            yAxisIndex: 0,
+            data: dataAll[0][1],
+            markLine: markLineOpt
+        },
+        {
+            name: 'astroph',
+            type: 'line',
+            xAxisIndex: 0,
+            yAxisIndex: 0,
+            data: dataAll[0][2],
+            markLine: markLineOpt
+        },
+        {
+            name: 'brightkite',
+            type: 'line',
+            xAxisIndex: 0,
+            yAxisIndex: 0,
+            data: dataAll[0][3],
+            markLine: markLineOpt
+        },
+        
+        // 曼哈顿距离
+        {
+            name: 'facebook',
+            type: 'line',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            data: dataAll[1][0],
+            markLine: markLineOpt
+        },
+        {
+            name: 'email',
+            type: 'line',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            data: dataAll[1][1],
+            markLine: markLineOpt
+        },
+        {
+            name: 'astroph',
+            type: 'line',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            data: dataAll[1][2],
+            markLine: markLineOpt
+        },
+        {
+            name: 'brightkite',
+            type: 'line',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            data: dataAll[1][3],
+            markLine: markLineOpt
+        },
+        
+        // 余弦夹角
+        {
+            name: 'facebook',
+            type: 'line',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+            data: dataAll[1][0],
+            markLine: markLineOpt
+        },
+        {
+            name: 'email',
+            type: 'line',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+            data: dataAll[2][1],
+            markLine: markLineOpt
+        },
+        {
+            name: 'astroph',
+            type: 'line',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+            data: dataAll[2][2],
+            markLine: markLineOpt
+        },
+        {
+            name: 'brightkite',
+            type: 'line',
+            xAxisIndex: 2,
+            yAxisIndex: 2,
+            data: dataAll[2][3],
+            markLine: markLineOpt
+        },
+        
+        // 相关系数
+        {
+            name: 'facebook',
+            type: 'line',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+            data: dataAll[3][0],
+            markLine: markLineOpt
+        },
+        {
+            name: 'email',
+            type: 'line',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+            data: dataAll[3][1],
+            markLine: markLineOpt
+        },
+        {
+            name: 'astroph',
+            type: 'line',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+            data: dataAll[3][2],
+            markLine: markLineOpt
+        },
+        {
+            name: 'brightkite',
+            type: 'line',
+            xAxisIndex: 3,
+            yAxisIndex: 3,
+            data: dataAll[3][3],
+            markLine: markLineOpt
+        },
+    ]
+};

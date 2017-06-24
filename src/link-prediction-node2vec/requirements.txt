@@ -1,0 +1,5 @@
+networkx==1.11
+numpy==1.12.1
+gensim==1.0.1
+wheel==0.24.0
+scipy==0.13.3
